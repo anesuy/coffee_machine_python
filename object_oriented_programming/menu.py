@@ -25,7 +25,7 @@ class Menu:
 
     def get_drink(self, order):
         for item in self.menu:
-            if item == order:
+            if item.name == order:
                 return item
-        print(f"Sorry, {order} in not available in the menu list." +
+        print(f"Sorry, {order} in not available in the menu list. " +
               "Please, try again.")
